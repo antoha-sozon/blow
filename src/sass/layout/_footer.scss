@@ -1,0 +1,38 @@
+aside {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	color: rgba($black, 0.3);
+	min-width: 120px;
+}
+.footer-text { 
+	flex-grow: 1;
+	writing-mode: vertical-rl;
+	b {
+		color: $black; 
+	}
+	p {
+    	transform: rotate(180deg); 
+    	text-transform: uppercase;    
+    	margin: 0;
+   		 line-height: 120px;
+	}	  
+} 
+.footer-icon {
+	flex-shrink: 0;
+	min-height: 80px;
+
+	i {
+		line-height: 100px;
+	}
+
+	a {
+	 	color: rgba($black, 0.3);
+
+	 	&:hover {
+	 		color: $black;
+	 	}
+	}
+}
